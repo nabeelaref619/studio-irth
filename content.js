@@ -71,7 +71,6 @@ const copy={
     "creativeLabel": "Creative communications",
     "artCaption": "TWO DISCIPLINES. ONE CONNECTED APPROACH.",
     "navStart": "Contact",
-    "sculptureCaption": "A NEW DIMENSION OF IRTH",
     "manifestoLabel": "THE WAY WE SEE IT",
     "manifesto": "Some problems need<br>a <span class=\"system-word\">system.</span><br>Others need a <em>story.</em><br>We build both.",
     "manifestoBody": "Irth connects the analytical with the imaginative. We ask the right questions, untangle the complexity and make something people can use, understand and feel.",
@@ -123,7 +122,7 @@ const copy={
       "Explore creative work"
     ],
     "skip": "Skip to content",
-    "heroAlt": "A sculptural interpretation of the Studio Irth logo",
+    "heroAlt": "The red Irth sculpture centered in a burgundy creative studio",
     "heroAria": "Introducing Studio Irth",
     "metaDescription": "Studio Irth in Amman creates digital solutions and creative communications. Explore business systems, campaigns and the work of founder Nabil Aref."
   },
@@ -199,7 +198,6 @@ const copy={
     "creativeLabel": "التواصل الإبداعي",
     "artCaption": "تخصّصان. رؤية متكاملة.",
     "navStart": "تواصل معنا",
-    "sculptureCaption": "بُعد جديد لإرث",
     "manifestoLabel": "هكذا نرى الأمور",
     "manifesto": "بعض التحدّيات<br>تحتاج إلى <span class=\"system-word\">نظام.</span><br>وبعضها إلى <em>حكاية.</em><br>نصنع الاثنين.",
     "manifestoBody": "يجمع إرث بين التحليل والخيال. نسأل، ونفكّ التعقيد، ثم نصنع شيئًا يستطيع الناس استخدامه وفهمه والشعور به.",
@@ -251,7 +249,7 @@ const copy={
       "اكتشف الأعمال الإبداعية"
     ],
     "skip": "انتقل إلى المحتوى",
-    "heroAlt": "تجسيد فني لشعار استوديو إرث",
+    "heroAlt": "مجسّم شعار إرث الأحمر يتوسّط استوديو إبداعيًا بدرجات العنّابي",
     "heroAria": "تعرّف على استوديو إرث",
     "metaDescription": "استوديو إرث في عمّان للحلول الرقمية والتواصل الإبداعي. اكتشف أنظمة الأعمال والحملات وأعمال المؤسس نبيل عارف."
   }

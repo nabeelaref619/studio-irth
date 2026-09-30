@@ -60,20 +60,14 @@ nav a:hover{color:var(--wine);text-decoration:underline;text-underline-offset:7p
 /* Real, independent panels: RTL swaps their order, never the artwork itself. */
 .hero{padding-top:24px}
 .hero-stage{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));min-height:clamp(500px,40vw,580px);margin:0 var(--gutter) 24px;overflow:hidden;border:1px solid #dfc5c8;border-radius:18px;background:#f0e0df}
-.hero-stage .art{position:relative;grid-column:2;grid-row:1;overflow:hidden;min-width:0;min-height:100%;background:#8a5050;direction:ltr}
-.hero-stage .art>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:82% center;transition:transform .8s ease-out;animation:hero-settle 1.2s ease-out both}
+.hero-stage .art{position:relative;grid-column:2;grid-row:1;overflow:hidden;min-width:0;min-height:100%;background:#4a1825;direction:ltr}
+.hero-stage .art>img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .8s ease-out;animation:hero-settle 1.2s ease-out both}
 .hero-copy{grid-column:1;grid-row:1;min-width:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,4vw,64px);text-align:start}
 .hero-copy .eyebrow{font-size:.75rem;letter-spacing:.04em}
 .hero h1{font-size:clamp(3.2rem,5.7vw,5.5rem);line-height:1.08;letter-spacing:-.05em;margin:24px 0}
 .hero h1 em{font-weight:400;color:var(--wine)}
 .hero .lead{font-size:1rem;line-height:1.8;color:#412c35;max-width:27rem;margin-bottom:26px;text-wrap:pretty}
 .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px 24px}
-.hero-caption{position:relative;grid-column:2;grid-row:1;align-self:end;justify-self:end;z-index:1;display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 14px;max-width:calc(100% - 40px);margin:20px;padding:8px 12px;border-radius:4px;background:#28131fa8;color:#fff;direction:ltr}
-.caption-brand{display:inline-flex;align-items:baseline;gap:9px;font-size:20px;font-weight:500;line-height:1.4}
-.caption-brand [lang=en]{font-family:'Poppins',sans-serif;letter-spacing:.02em}
-.caption-brand [lang=ar]{font-family:'Tajawal',sans-serif;letter-spacing:0}
-.caption-divider{font:400 16px 'Poppins',sans-serif;opacity:.7}
-.caption-line{font-size:.75rem;font-weight:500;letter-spacing:.04em}
 .hero-bottom{display:flex;align-items:center;gap:24px;padding:18px var(--gutter);background:var(--dark);color:#f5e7ed;font-size:.875rem}
 .hero-bottom .cross{font-size:25px;line-height:1;color:#d995b0}
 .scroll-cue{margin-inline-start:auto;color:#dfc4d1;font-size:.75rem}
@@ -281,7 +275,6 @@ html[lang=ar] h2 em,html[lang=ar] h1 em{font-style:normal;font-weight:500}
 html[lang=ar] nav a,html[lang=ar] .filters button,html[lang=ar] .service li,html[lang=ar] .skill-group li{font-size:1rem}
 html[lang=ar] .hero h1{font-size:clamp(3.1rem,5.5vw,5.25rem);line-height:1.28;letter-spacing:0;margin-block:22px}
 html[lang=ar] .hero .lead{font-size:1.125rem;line-height:1.8}
-html[lang=ar] .caption-line{font-family:'Tajawal',sans-serif;font-size:.875rem;letter-spacing:0}
 html[lang=ar] .manifesto-title{line-height:1.4}
 html[lang=ar] .system-word{letter-spacing:0;line-height:1.25}
 html[lang=ar] .service h3{line-height:1.4;margin-block:17px}
@@ -318,7 +311,6 @@ to{transform:scaleY(1.1)}
 }
 
 @media(max-width:1100px){
-.caption-line{display:none}
 .hero-actions{gap:12px 18px}
 .manifesto{grid-template-columns:.8fr 1.5fr;gap:6%}
 .service{padding-inline-end:28px}
@@ -341,9 +333,8 @@ to{transform:scaleY(1.1)}
 .hero h1{font-size:clamp(2.9rem,8vw,4.5rem);margin-block:22px}
 .hero .lead{max-width:35rem}
 .hero-actions{flex-direction:row;align-items:center}
-.hero-stage .art{grid-column:1;grid-row:2;min-height:0;height:clamp(250px,48vw,390px)}
-.hero-stage .art>img{object-position:82% center;animation:none}
-.hero-caption{grid-column:1;grid-row:2}
+.hero-stage .art{grid-column:1;grid-row:2;min-height:0;height:auto;aspect-ratio:1.35}
+.hero-stage .art>img{object-position:center;animation:none}
 html[lang=ar] .hero h1{font-size:clamp(2.75rem,7.5vw,4.5rem);line-height:1.28}
 .about{gap:6%}
 .founder-word{font-size:clamp(4.5rem,8vw,6rem)}
@@ -441,8 +432,6 @@ html[lang=ar] .archive-body{padding-inline:42px 15px}
 .hero h1{font-size:clamp(2.5rem,10.6vw,3.15rem)}
 html[lang=ar] .hero h1{font-size:clamp(2.5rem,10.6vw,3.15rem)}
 .hero-actions{gap:6px 16px}
-.hero-caption{margin:12px;max-width:calc(100% - 24px)}
-.caption-brand{font-size:16px}
 .hero-bottom{gap:12px;font-size:.8125rem}
 .manifesto-side{display:block}
 .manifesto-side>.eyebrow{margin-bottom:22px}
