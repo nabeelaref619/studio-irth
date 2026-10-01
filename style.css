@@ -68,9 +68,8 @@ nav a:hover{color:var(--wine);text-decoration:underline;text-underline-offset:7p
 .hero h1 em{font-weight:400;color:var(--wine)}
 .hero .lead{font-size:1rem;line-height:1.8;color:#412c35;max-width:27rem;margin-bottom:26px;text-wrap:pretty}
 .hero-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px 24px}
-.hero-bottom{display:flex;align-items:center;gap:24px;padding:18px var(--gutter);background:var(--dark);color:#f5e7ed;font-size:.875rem}
+.hero-bottom{display:flex;align-items:center;justify-content:center;gap:24px;padding:18px var(--gutter);background:var(--dark);color:#f5e7ed;font-size:.875rem;text-align:center}
 .hero-bottom .cross{font-size:25px;line-height:1;color:#d995b0}
-.scroll-cue{margin-inline-start:auto;color:#dfc4d1;font-size:.75rem}
 
 /* Manifesto */
 .manifesto{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);align-items:center;gap:8%}
@@ -380,8 +379,7 @@ nav a{font-size:.8125rem;min-height:44px}
 .hero h1{font-size:clamp(2.6rem,10.6vw,4.5rem)}
 .hero-actions{gap:12px 20px}
 .hero-stage .art{height:auto;aspect-ratio:1.35}
-.hero-bottom{gap:14px;font-size:.8125rem;justify-content:space-between}
-.scroll-cue{display:none}
+.hero-bottom{gap:14px;font-size:.8125rem}
 .hero-bottom>span:not(.cross){max-width:45%}
 .manifesto{grid-template-columns:1fr;gap:30px}
 .manifesto-side{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}

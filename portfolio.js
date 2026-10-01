@@ -73,7 +73,15 @@ const portfolio = [
   {id:'square',category:'creative',stage:'exploration',title:['Abu Ras Murabba3','أبو راس مربع'],status:['Campaign concept','فكرة حملة'],
     role:['Creative concept / Behaviour-change communication','فكرة إبداعية / التواصل لتغيير السلوك'],
     description:['A campaign concept using a square-headed character to make everyday behaviours visible and start a conversation. A memorable character carrying a message without becoming a lecture.','فكرة حملة تستخدم شخصية برأس مربّع لتسليط الضوء على سلوكيات يومية وفتح النقاش حولها. شخصية لافتة تحمل الرسالة دون أن تتحول إلى موعظة.'],
-    tags:[['Character concept','Behaviour change','Campaign strategy'],['ابتكار الشخصيات','تغيير السلوك','استراتيجية الحملات']]}
+    tags:[['Character concept','Behaviour change','Campaign strategy'],['ابتكار الشخصيات','تغيير السلوك','استراتيجية الحملات']]},
+  {id:'anti-narcotics',category:'creative',stage:'archive',title:['Anti-narcotics · Awareness content','مكافحة المخدرات · محتوى توعوي'],status:['Creative collaboration','تعاون إبداعي'],
+    role:['Campaign promotion & bilingual video copy','الترويج للحملات وكتابة محتوى الفيديو باللغتين'],
+    description:['Awareness content with Jordan’s Anti-Narcotics Department, including a promotional reel for its public creative competition and Arabic–English video copy and subtitles.','محتوى توعوي بالتعاون مع مكافحة المخدرات في الأردن، يشمل ريلًا ترويجيًا لمسابقتها الإبداعية المفتوحة للجمهور، وكتابة نصوص الفيديو وإعداد الترجمة بالعربية والإنجليزية.'],
+    tags:[['Public awareness','Short-form video','Bilingual content'],['التوعية المجتمعية','الفيديو القصير','محتوى باللغتين']]},
+  {id:'four-by-four',category:'creative',stage:'archive',title:['4×4 Club','نادي الدفع الرباعي'],status:['Creative collaboration','تعاون إبداعي'],
+    role:['Creative communications / Collaboration','التواصل الإبداعي / تعاون'],
+    description:['A collaboration with the 4×4 Club, part of Nabil’s creative communications work.','تعاون مع نادي الدفع الرباعي ضمن أعمال نبيل في التواصل الإبداعي.'],
+    tags:[['Creative communications','Collaboration'],['التواصل الإبداعي','تعاون']]}
 ];
 
 const profile = {
@@ -123,4 +131,4 @@ const profile = {
   }
 };
 for (const language of ['en','ar']) Object.assign(copy[language],profile[language]);
-const mediaLinks=['https://www.youtube.com/watch?v=OkTa1sZfhpY','https://www.youtube.com/watch?v=SwaKR4LfoPQ','https://www.youtube.com/watch?v=PWRzpfD7-vo'];
+const mediaLinks=['https://www.youtube.com/watch?v=OkTa1sZfhpY','https://www.youtube.com/watch?v=zDppZQAVnWY&t=347s','https://www.youtube.com/watch?v=PWRzpfD7-vo'];
