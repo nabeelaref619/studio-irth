@@ -100,10 +100,10 @@ const profile = {
       ['02','Strategy & storytelling','I find the human angle inside a complicated idea.',['Audience insight & messaging','Campaign concepts & creative direction','Arabic & English copywriting','Scripts, reels & story development','Behaviour-change communication','Community building']],
       ['03','Production & people','I help ideas travel from the room to the audience.',['Video, photography & content creation','Podcast & audio production support','On-camera storytelling & public speaking','Facilitation & youth engagement','Stakeholder and partner coordination','Creative and technical collaboration']]
     ],
-    mediaLabel:'ON AIR / IN CONVERSATION',mediaTitle:'A voice beyond<br><em>the feed.</em>',mediaIntro:'Television features and long-form conversations on ADHD, lived experience and seeing things differently.',watch:'Watch the conversation',mediaNote:'Speaking from lived experience. These appearances form part of Nabil’s personal media work.',
+    mediaLabel:'ON AIR / IN CONVERSATION',mediaTitle:'A voice beyond<br><em>the feed.</em>',mediaIntro:'Television features, workshops and long-form conversations.',watch:'Watch the conversation',mediaNote:'Speaking from lived experience. These appearances form part of Nabil’s personal media work.',
     media:[
       ['Television · 2024','BBC News Arabic','How ADHD shapes young lives','A BBC Xtra TV feature following Nabil’s experience and his journey into awareness content.'],
-      ['Television clip · 2024','Al Hadath Jordan','Talking about ADHD, openly','Nabil speaks about attention and his everyday experience with ADHD.'],
+      ['Workshop','Ahli Bank Workshop','In conversation at Ahli Bank','Nabil’s participation in a workshop at Ahli Bank.'],
       ['Podcast · 2024','Warsheh Podcast','Could everyone have ADHD?','An extended Arabic conversation about lived experience, diagnosis and learning to understand yourself.']
     ]
   },
@@ -122,10 +122,10 @@ const profile = {
       ['02','الاستراتيجية والحكاية','أبحث عن الزاوية الإنسانية داخل الفكرة المعقّدة.',['فهم الجمهور وصياغة الرسائل','أفكار الحملات والتوجيه الإبداعي','الكتابة بالعربية والإنجليزية','السيناريو والريلز وتطوير الحكاية','التواصل لتغيير السلوك','بناء المجتمعات']],
       ['03','الإنتاج والعمل مع الناس','أساعد الأفكار على الوصول من غرفة العمل إلى الجمهور.',['الفيديو والتصوير وصناعة المحتوى','دعم إنتاج البودكاست والصوت','السرد أمام الكاميرا والتحدث للجمهور','التيسير ومشاركة الشباب','التنسيق مع الشركاء وأصحاب المصلحة','التعاون الإبداعي والتقني']]
     ],
-    mediaLabel:'على الشاشة / في الحوار',mediaTitle:'صوت يتجاوز<br><em>حدود المنشور.</em>',mediaIntro:'ظهور تلفزيوني وحوارات مطوّلة عن ADHD والتجربة الشخصية والنظر إلى الأشياء من زاوية مختلفة.',watch:'شاهد الحوار',mediaNote:'حديث من واقع التجربة الشخصية. هذه المشاركات جزء من الحضور الإعلامي لنبيل.',
+    mediaLabel:'على الشاشة / في الحوار',mediaTitle:'صوت يتجاوز<br><em>حدود المنشور.</em>',mediaIntro:'ظهور تلفزيوني وورش عمل وحوارات مطوّلة.',watch:'شاهد الحوار',mediaNote:'حديث من واقع التجربة الشخصية. هذه المشاركات جزء من الحضور الإعلامي لنبيل.',
     media:[
       ['تلفزيون · ٢٠٢٤','BBC News عربي','كيف يؤثر ADHD على حياة الشباب؟','تقرير لبرنامج بي بي سي إكسترا يتابع تجربة نبيل وانتقاله إلى صناعة المحتوى التوعوي.'],
-      ['مقطع تلفزيوني · ٢٠٢٤','الحدث الأردني','حديث صريح عن ADHD','نبيل يتحدث عن الانتباه وتفاصيل تجربته اليومية مع ADHD.'],
+      ['ورشة عمل','ورشة البنك الأهلي','في حوار لدى البنك الأهلي','مشاركة نبيل في ورشة عمل لدى البنك الأهلي.'],
       ['بودكاست · ٢٠٢٤','بودكاست ورشة','معقول كل الناس ADHD؟','حوار مطوّل بالعربية عن التجربة الشخصية والتشخيص ورحلة فهم الذات.']
     ]
   }
