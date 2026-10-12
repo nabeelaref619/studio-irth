@@ -1,9 +1,21 @@
 import {countWords,countCharacters,fitDimensions,ratioDimensions,formatTime} from './core.mjs';
+import {saveDraft,takeDraft,clearDraft} from './script-draft.mjs';
 const lang=document.documentElement.lang,ar=lang==='ar',t=(a,b)=>ar?a:b,$=id=>document.getElementById(id);
 const mode=document.body.dataset.tool;
 if(mode==='words'){
+ let storage=null;try{storage=window.sessionStorage;}catch{}
+ const draft=takeDraft(storage,location.pathname);
+ if(draft){$('text').value=draft.text;$('speed').value=draft.rate;}
  const update=()=>{const s=$('text').value,w=countWords(s,lang),rate=Number($('speed').value)||130;$('words').textContent=w;$('characters').textContent=countCharacters(s,lang);$('paragraphs').textContent=s.trim()?s.trim().split(/\n\s*\n/).filter(Boolean).length:0;$('duration').textContent=formatTime(Math.ceil(w/rate*60));$('speed-value').textContent=rate;};
- $('text').addEventListener('input',update);$('speed').addEventListener('input',update);$('clear').addEventListener('click',()=>{$('text').value='';update();$('text').focus();});
+ $('text').addEventListener('input',update);$('speed').addEventListener('input',update);$('clear').addEventListener('click',()=>{clearDraft(storage);$('text').value='';update();$('text').focus();});
+ document.querySelector('a.language')?.addEventListener('click',event=>{
+  if(event.button!==0||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
+  const next=new URL(event.currentTarget.href,location.href);
+  if(next.origin!==location.origin||!next.pathname.endsWith('/word-counter/'))return;
+  if(!saveDraft(storage,$('text').value,Number($('speed').value),next.pathname)){
+   event.preventDefault();$('status').textContent=t('لم يسمح المتصفح بالنقل المؤقت. يبقى نصك هنا؛ انسخه قبل فتح اللغة الأخرى في تبويب جديد.','Temporary transfer is unavailable. Your text stays here; copy it before opening the other language in a new tab.');
+  }
+ });
  $('copy').addEventListener('click',async()=>{try{await navigator.clipboard.writeText($('text').value);$('status').textContent=t('تم نسخ النص.','Text copied.');}catch{$('status').textContent=t('تعذّر النسخ التلقائي. حدّد النص وانسخه يدوياً.','Automatic copy unavailable. Select and copy your text manually.');}});update();
 }
 if(mode==='ratio'){

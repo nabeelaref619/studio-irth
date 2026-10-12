@@ -1,6 +1,6 @@
 export function countWords(text, locale='ar') {
   if (typeof Intl.Segmenter === 'function') return [...new Intl.Segmenter(locale,{granularity:'word'}).segment(text)].filter(x=>x.isWordLike).length;
-  return (text.match(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu)||[]).length;
+  return (text.match(/[\p{L}\p{N}][\p{L}\p{M}\p{N}]*(?:['’][\p{L}\p{N}][\p{L}\p{M}\p{N}]*)*/gu)||[]).length;
 }
 export function countCharacters(text,locale='ar') {
   return typeof Intl.Segmenter==='function'?[...new Intl.Segmenter(locale,{granularity:'grapheme'}).segment(text)].length:[...text].length;
